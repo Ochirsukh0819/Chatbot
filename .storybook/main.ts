@@ -17,7 +17,8 @@ const config: StorybookConfig = {
     options: {},
   },
 
-  staticDirs: ["../public"],
+  // uncomment this when /public has content
+  // staticDirs: ["../public"],
 
   docs: {},
 

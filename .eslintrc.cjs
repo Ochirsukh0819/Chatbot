@@ -13,6 +13,7 @@ module.exports = {
   plugins: ["@typescript-eslint"],
   rules: {
     "@next/next/no-html-link-for-pages": "off",
+    "@typescript-eslint/no-require-imports": "off",
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {
