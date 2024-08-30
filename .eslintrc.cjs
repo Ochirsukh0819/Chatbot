@@ -58,6 +58,17 @@ module.exports = {
         },
       },
     ],
+    "no-restricted-imports": [
+      "error",
+      {
+        patterns: [
+          {
+            group: ["../*", "../../*"],
+            message: "Please use absolute paths, i.e import { foo } from '@/components/foo'",
+          },
+        ],
+      },
+    ],
   },
 }
 
