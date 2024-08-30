@@ -29,7 +29,7 @@ module.exports = {
       },
     ],
     "import/order": [
-      1,
+      "error",
       {
         groups: ["external", "builtin", "internal", "sibling", "parent", "index"],
         pathGroups: [
@@ -56,6 +56,7 @@ module.exports = {
           order: "asc",
           caseInsensitive: true,
         },
+        "newlines-between": "never",
       },
     ],
     "no-restricted-imports": [
