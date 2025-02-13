@@ -4,7 +4,8 @@ import axios, { AxiosError } from "axios"
 import { cookies } from "next/headers"
 import MESSAGES from "@/lib/constant"
 
-const CHATBOT_API_URL = process.env.NODE_ENV === "development" ? process.env.NEXT_PUBLIC_API_URL : ""
+const CHATBOT_API_URL =
+  process.env.NODE_ENV === "development" ? process.env.NEXT_PUBLIC_API_URL : process.env.NEXT_PUBLIC_API_URL
 
 // Create an axios instance
 const axiosInstance = axios.create({
