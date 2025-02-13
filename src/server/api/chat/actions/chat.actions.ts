@@ -12,7 +12,6 @@ export const chat = async (chat: ChatType) => {
     })
     return res.data.response
   } catch (error) {
-    console.debug("error", error)
     return "error"
   }
 }

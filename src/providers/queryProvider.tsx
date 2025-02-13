@@ -15,16 +15,12 @@ function QueryProvider({ children }: { children: ReactNode }) {
     queryCache: new QueryCache({
       onError: (error, query) => {
         if (query.meta?.errorMessage) {
-          console.error("Meta error", query.meta.errorMessage)
           toast.error(query.meta.errorMessage as string)
         } else if (isAxiosError(error)) {
-          console.error("Axios", error)
           toast.error(error.message)
         } else if (error instanceof Error) {
-          console.error("Error type", error)
           errorHandler(error)
         } else {
-          console.error("Unknown error", error)
           toast.error(MESSAGES.ERROR.UNKNOWN_FAILED())
         }
       },

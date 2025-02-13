@@ -19,7 +19,6 @@ function ChatHistory() {
   const request = Array.isArray(id) ? id[0] : id
 
   const { data: history } = useGetChatHistoryById(request!)
-
   const chat = useChat()
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
